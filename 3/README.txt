@@ -31,10 +31,10 @@ Write pseudo-SQL statements to create database tables to store the products of a
 Write a SQL query to find the list of products that belong to more than 5 public categories.
 
 Test 6:
-Write a regular expression to match strings containing both "Odoo" and "#rules" in any order.
-// return string with Odoo, any amount of characters and #rules or the same condition in reversed order
+Write a regular expression to match strings containing both "GitHub" and "#rules" in any order.
+// return string with GitHub, any amount of characters and #rules or the same condition in reversed order
 
-/Odoo.*#rules|#rules.*Odoo/
+/GitHub.*#rules|#rules.*GitHub/
 
 Test 7:
 Write a function that, when called, returns an array for which each element is a letter of the alphabet, from "A" to "Z" (exactly once, in order and upper case). Your code cannot contain the character ' (quote), " (double quote) or ` (back quote)
