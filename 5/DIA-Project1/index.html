@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/chart.css">
+</head>
+<body>
+<div class="bgimg-1">
+    <div class="caption">
+        <div class="container">
+            <div class="page-header">
+                <h1>Check weather everywhere in the World</h1>
+            </div>
+            <form class="input-group input-group-lg">
+                <input type="text" class="form-control" id="input" placeholder="Enter city name">
+                <div class="input-group-btn">
+                    <button type="button" class="btn btn-primary" id="search"
+                            onclick="module.processInput()">Go!</button>
+                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">Options <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-right">
+                        <!--<li><a id="location">Get location from browser</a></li>-->
+                        <li><a onclick="module.clearInputField()">Clear field</a></li>
+                        <!--<li role="separator" class="divider"></li>-->
+                    </ul>
+                </div><!-- /btn-group -->
+            </form>
+
+        </div>
+        <div class="results ">
+            <div class="row">
+                <div class="col-sm-6" id="left">
+                    <ul class="list-group hidden">
+                        <li class="list-group-item" id="city"></li>
+                        <li class="list-group-item" id="maindesc"></li>
+                        <li class="list-group-item" id="description"></li>
+                        <li class="list-group-item" id="temp"></li>
+                        <li class="list-group-item" id="min_temp"></li>
+                        <li class="list-group-item" id="max_temp"></li>
+                        <li class="list-group-item" id="wind_speed"></li>
+                        <li class="list-group-item" id="clouds"></li>
+                    </ul>
+                </div>
+                <div class="col-sm-6" id="right">
+                    <div id="chartContainer" class="hidden"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap core JavaScript -->
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script>
+<script src="js/script.js"></script>
+<script src="js/chart.js"></script>
+</body>
+</html>

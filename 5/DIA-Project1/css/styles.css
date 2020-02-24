@@ -1,0 +1,32 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font: 400 15px/1.8 "Lato", sans-serif;
+    color: #777;
+    background: #4d6687;
+}
+
+.bgimg-1 {
+  position: relative;
+  opacity: 0.65;
+  background-size: cover;
+  background: #ced4df url("../img/bg-masthead.jpg") center;
+  height: 100%;
+}
+.caption {
+    position: absolute;
+    left: 0;
+    top: 10%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+}
+
+.results {
+  position: relative;
+  margin: 0 auto;
+  padding: 2% 2% 2% 2%;
+  horiz-align: center;
+  text-align: left;
+  color: #000;
+}
