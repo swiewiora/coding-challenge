@@ -36,6 +36,7 @@ class RunningMedian:
         If list length is even, return the average of the 2 middle elements.
         """
         logging.debug(self.list)
+        self.list.sort()
 
         if len(self.list) == 1:
             return self.list[0]
